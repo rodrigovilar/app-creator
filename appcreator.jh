@@ -1,0 +1,18 @@
+entity Projeto {
+	nome String
+    chave String
+}
+
+entity Aplicacao {
+	nome String
+    chave String
+}
+
+relationship ManyToOne {
+  Projeto{criador(login)} to User
+  Aplicacao{projeto(nome)} to Projeto
+}
+
+relationship OneToMany {
+  Projeto{aplicacao(nome)} to Aplicacao
+}
