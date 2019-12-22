@@ -1,0 +1,39 @@
+{
+    "name": "Aplicacao",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "chave",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "projeto",
+            "otherEntityRelationshipName": "aplicacao",
+            "relationshipName": "projeto",
+            "otherEntityField": "nome"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "projeto",
+            "otherEntityRelationshipName": "aplicacao",
+            "relationshipName": "projeto",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191222191147",
+    "entityTableName": "aplicacao",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

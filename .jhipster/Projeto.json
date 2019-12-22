@@ -1,0 +1,38 @@
+{
+    "name": "Projeto",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "chave",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "aplicacao",
+            "otherEntityRelationshipName": "projeto",
+            "relationshipName": "aplicacao"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "projeto",
+            "relationshipName": "criador",
+            "otherEntityField": "login"
+        }
+    ],
+    "changelogDate": "20191222191146",
+    "entityTableName": "projeto",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
