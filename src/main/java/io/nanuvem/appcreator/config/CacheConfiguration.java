@@ -42,6 +42,8 @@ public class CacheConfiguration {
             createCache(cm, io.nanuvem.appcreator.domain.User.class.getName());
             createCache(cm, io.nanuvem.appcreator.domain.Authority.class.getName());
             createCache(cm, io.nanuvem.appcreator.domain.User.class.getName() + ".authorities");
+            createCache(cm, io.nanuvem.appcreator.domain.Projeto.class.getName());
+            createCache(cm, io.nanuvem.appcreator.domain.Aplicacao.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
